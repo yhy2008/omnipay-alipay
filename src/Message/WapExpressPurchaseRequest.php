@@ -30,6 +30,7 @@ class WapExpressPurchaseRequest extends BasePurchaseRequest
             "it_b_pay"       => $this->getItBPay(),
             "extern_token"   => $this->getToken(),
             "_input_charset" => $this->getInputCharset(),
+            "app_pay"        => $this->getAppPay(),
         );
 
         $data              = array_filter($data);
