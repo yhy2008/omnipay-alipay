@@ -202,7 +202,7 @@ abstract class BasePurchaseRequest extends BaseAbstractRequest
         return $this->getParameter('app_pay');
     }
     
-    public function setAppPay()
+    public function setAppPay($value)
     {
         $this->setParameter('app_pay', $value);
     }
