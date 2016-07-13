@@ -24,7 +24,8 @@ abstract class BasePurchaseRequest extends BaseAbstractRequest
             'out_trade_no',
             'subject',
             'input_charset',
-            'total_fee'
+            'total_fee',
+            'app_pay'
         );
     }
 
@@ -194,6 +195,16 @@ abstract class BasePurchaseRequest extends BaseAbstractRequest
     public function setTotalFee($value)
     {
         $this->setParameter('total_fee', $value);
+    }
+    
+    public function getAppPay()
+    {
+        return $this->getParameter('app_pay');
+    }
+    
+    public function setAppPay()
+    {
+        $this->setParameter('app_pay', $value);
     }
 
     public function setExtraCommonParam($value)
